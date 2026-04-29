@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101419'/%3E%3Cpath d='M18 34h10v-8h18v10H28v8H18z' fill='%238ee66d'/%3E%3Ccircle cx='43' cy='30' r='2' fill='%23151719'/%3E%3Ccircle cx='50' cy='44' r='5' fill='%23ff5e57'/%3E%3C/svg%3E" />
+    <title>3D Snake</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="3D Snake game board"></canvas>
+
+      <section class="hud hud--stats" aria-label="Game status">
+        <div class="stat">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+          <span>Best</span>
+          <strong id="best">0</strong>
+        </div>
+        <div class="stat">
+          <span>Level</span>
+          <strong id="level">1</strong>
+        </div>
+        <div class="stat">
+          <span>Layer</span>
+          <strong id="layer">1</strong>
+        </div>
+        <div class="stat">
+          <span>Fruit</span>
+          <strong id="fruit-layer">1</strong>
+        </div>
+        <div class="state-pill" id="state">Ready</div>
+      </section>
+
+      <section class="hud hud--actions" aria-label="Game actions">
+        <button class="icon-button" id="pause" type="button" aria-label="Pause">
+          <i data-lucide="pause"></i>
+        </button>
+        <button class="icon-button" id="restart" type="button" aria-label="Restart">
+          <i data-lucide="rotate-ccw"></i>
+        </button>
+      </section>
+
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
